@@ -23,6 +23,9 @@ newtype DummyTime = MkDummyTime
   { daytime :: Bool
   }
 
+instance HasGreeter MockContext where
+  type GetGreeter MockContext = DaytimeGreeter SimpleGreeter
+
 instance SimpleTime DummyTime where
   isDaytime = daytime
 
@@ -51,4 +54,4 @@ instance InjectShopClosedError MockContext where
   raise_shop_closed_error _ = error " "
 
 mockGreet :: MockContext -> String -> IO ()
-mockGreet = greet @(DaytimeGreeter SimpleGreeter)
+mockGreet = greetWithCtx
