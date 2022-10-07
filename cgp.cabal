@@ -1,0 +1,60 @@
+cabal-version:      2.4
+name:               context-generic-programming-demo
+version:            0.1.0.0
+
+description: A demo of using context-generic programming in Haskell
+
+bug-reports: https://github.com/maybevoid/context-generic-programming-hs-demo
+
+license: BSD-3-Clause
+
+author: Soares Chen
+
+maintainer: soares.chen@maybevoid.com
+
+library
+    exposed-modules:
+        App.Contexts.Mock
+        App.Types.Person
+
+    other-modules:
+        App.Classes.Errors.PersonNotFound
+        App.Classes.Errors.ShopClosed
+        App.Classes.Greeter
+        App.Classes.Monad
+        App.Classes.Person
+        App.Classes.PersonMap
+        App.Classes.PersonQuerier
+        App.Classes.Time
+        App.Components.DaytimeGreeter
+        App.Components.QueryPersonFromMap
+        App.Components.SimpleGreeter
+
+    default-extensions:
+        AllowAmbiguousTypes
+        FlexibleContexts
+        FlexibleInstances
+        InstanceSigs
+        MultiParamTypeClasses
+        ScopedTypeVariables
+        TypeApplications
+        TypeFamilies
+        UndecidableInstances
+
+    build-depends:
+        base ^>=4.16.3.0,
+        unordered-containers ^>=0.2.19.1,
+        hashable ^>=1.4.1.0,
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable context-generic-programming-demo
+    main-is:          Main.hs
+
+    build-depends:
+        base ^>=4.16.3.0,
+        unordered-containers ^>=0.2.19.1,
+        context-generic-programming-demo,
+
+    hs-source-dirs:   app
+    default-language: Haskell2010
