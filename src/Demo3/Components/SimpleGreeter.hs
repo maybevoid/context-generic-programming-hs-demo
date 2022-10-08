@@ -1,10 +1,10 @@
-module App.Components.SimpleGreeter where
+module Demo3.Components.SimpleGreeter where
 
-import App.Classes.Greeter
-import App.Classes.Monad
-import App.Classes.Person
-import App.Classes.PersonQuerier
 import Control.Monad.IO.Class
+import Demo3.Classes.Greeter
+import Demo3.Classes.Monad
+import Demo3.Classes.Person
+import Demo3.Classes.PersonQuerier
 
 data SimpleGreeter
 

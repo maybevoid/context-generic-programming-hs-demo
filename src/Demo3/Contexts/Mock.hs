@@ -1,18 +1,18 @@
-module App.Contexts.Mock where
+module Demo3.Contexts.Mock where
 
-import App.Classes.Errors.PersonNotFound
-import App.Classes.Errors.ShopClosed
-import App.Classes.Greeter
-import App.Classes.Monad
-import App.Classes.Person
-import App.Classes.PersonMap
-import App.Classes.PersonQuerier
-import App.Classes.Time
-import App.Components.DaytimeGreeter
-import App.Components.QueryPersonFromMap
-import App.Components.SimpleGreeter
-import App.Types.Person
 import Data.HashMap.Strict
+import Demo3.Classes.Errors.PersonNotFound
+import Demo3.Classes.Errors.ShopClosed
+import Demo3.Classes.Greeter
+import Demo3.Classes.Monad
+import Demo3.Classes.Person
+import Demo3.Classes.PersonMap
+import Demo3.Classes.PersonQuerier
+import Demo3.Classes.Time
+import Demo3.Components.DaytimeGreeter
+import Demo3.Components.QueryPersonFromMap
+import Demo3.Components.SimpleGreeter
+import Demo3.Types.Person
 
 data MockContext = MkMockContext
   { personMap :: HashMap String SimplePerson,

@@ -1,12 +1,12 @@
-module App.Components.QueryPersonFromMap where
+module Demo3.Components.QueryPersonFromMap where
 
-import App.Classes.Errors.PersonNotFound
-import App.Classes.Monad
-import App.Classes.Person
-import App.Classes.PersonMap
-import App.Classes.PersonQuerier
 import Data.HashMap.Strict
 import Data.Hashable
+import Demo3.Classes.Errors.PersonNotFound
+import Demo3.Classes.Monad
+import Demo3.Classes.Person
+import Demo3.Classes.PersonMap
+import Demo3.Classes.PersonQuerier
 import Prelude hiding (lookup)
 
 data QueryPersonFromMap

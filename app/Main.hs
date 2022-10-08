@@ -1,8 +1,8 @@
 module Main where
 
-import App.Contexts.Mock
-import App.Types.Person
 import Data.HashMap.Strict
+import Demo3.Contexts.Mock
+import Demo3.Types.Person
 
 mockPersonMap :: HashMap String SimplePerson
 mockPersonMap =

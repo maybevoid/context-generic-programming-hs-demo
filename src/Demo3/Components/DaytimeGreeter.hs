@@ -1,11 +1,11 @@
-module App.Components.DaytimeGreeter where
+module Demo3.Components.DaytimeGreeter where
 
-import App.Classes.Errors.ShopClosed (InjectShopClosedError (..))
-import App.Classes.Greeter
-import App.Classes.Monad
-import App.Classes.Person
-import App.Classes.PersonQuerier
-import App.Classes.Time (HasTime (Time, now), SimpleTime (..))
+import Demo3.Classes.Errors.ShopClosed (InjectShopClosedError (..))
+import Demo3.Classes.Greeter
+import Demo3.Classes.Monad
+import Demo3.Classes.Person
+import Demo3.Classes.PersonQuerier
+import Demo3.Classes.Time (HasTime (Time, now), SimpleTime (..))
 
 data DaytimeGreeter in_greeter
 

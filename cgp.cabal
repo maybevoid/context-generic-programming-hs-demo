@@ -14,21 +14,21 @@ maintainer: soares.chen@maybevoid.com
 
 library
     exposed-modules:
-        App.Contexts.Mock
-        App.Types.Person
+        Demo3.Contexts.Mock
+        Demo3.Types.Person
 
     other-modules:
-        App.Classes.Errors.PersonNotFound
-        App.Classes.Errors.ShopClosed
-        App.Classes.Greeter
-        App.Classes.Monad
-        App.Classes.Person
-        App.Classes.PersonMap
-        App.Classes.PersonQuerier
-        App.Classes.Time
-        App.Components.DaytimeGreeter
-        App.Components.QueryPersonFromMap
-        App.Components.SimpleGreeter
+        Demo3.Classes.Errors.PersonNotFound
+        Demo3.Classes.Errors.ShopClosed
+        Demo3.Classes.Greeter
+        Demo3.Classes.Monad
+        Demo3.Classes.Person
+        Demo3.Classes.PersonMap
+        Demo3.Classes.PersonQuerier
+        Demo3.Classes.Time
+        Demo3.Components.DaytimeGreeter
+        Demo3.Components.QueryPersonFromMap
+        Demo3.Components.SimpleGreeter
 
     default-extensions:
         AllowAmbiguousTypes

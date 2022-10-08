@@ -1,4 +1,4 @@
-module App.Classes.Person where
+module Demo3.Classes.Person where
 
 class NamedPerson person where
   person_name :: person -> String

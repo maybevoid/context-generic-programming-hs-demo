@@ -1,6 +1,6 @@
-module App.Types.Person where
+module Demo3.Types.Person where
 
-import App.Classes.Person
+import Demo3.Classes.Person
 
 newtype SimplePerson = MkPerson
   { name :: String

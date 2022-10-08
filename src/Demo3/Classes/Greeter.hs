@@ -1,7 +1,7 @@
-module App.Classes.Greeter where
+module Demo3.Classes.Greeter where
 
-import App.Classes.Monad
-import App.Classes.Person
+import Demo3.Classes.Monad
+import Demo3.Classes.Person
 
 class
   (HasMonad ctx, HasPersonTypes ctx) =>

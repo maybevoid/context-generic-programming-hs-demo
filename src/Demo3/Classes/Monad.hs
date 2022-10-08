@@ -1,4 +1,4 @@
-module App.Classes.Monad where
+module Demo3.Classes.Monad where
 
 import Data.Kind (Type)
 

@@ -1,7 +1,7 @@
-module App.Classes.Errors.PersonNotFound where
+module Demo3.Classes.Errors.PersonNotFound where
 
-import App.Classes.Monad
-import App.Classes.Person
+import Demo3.Classes.Monad
+import Demo3.Classes.Person
 
 class
   (HasPersonTypes ctx, HasMonad ctx) =>
