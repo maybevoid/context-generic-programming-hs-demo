@@ -3,11 +3,11 @@ module Demo1.Components.Bar where
 import Control.Monad.State.Strict
 import Demo1.Classes.MFunc
 
-data Bar
-
 newtype BarState = BarState
   { barCounter :: Int
   }
+
+data Bar
 
 instance
   (Monad m, MonadState BarState m) =>

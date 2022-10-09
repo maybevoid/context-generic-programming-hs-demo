@@ -3,11 +3,11 @@ module Demo1.Components.Foo where
 import Control.Monad.Reader
 import Demo1.Classes.MFunc
 
-data Foo
-
 newtype FooEnv = FooEnv
   { fooConfig :: Int
   }
+
+data Foo
 
 instance
   (Monad m, MonadReader FooEnv m) =>
